@@ -107,7 +107,7 @@
                         // update the LED
                         var ledIndex = pixels.length;
                         if (ledIndex < leds.length) {
-                            leds[ledIndex].fillColor = new Color(pixel.R, pixel.G, pixel.B);
+                            leds[ledIndex].fillColor = new Color(pixel.R/255, pixel.G/255, pixel.B/255);
                         }
 
                         // stash it and reset
